@@ -33,7 +33,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/feed">News</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/blog">Blog</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/video">Video</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" to="/hub">Hub</router-link>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -73,7 +84,11 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div id="app">
+                <router-view>
+                    <news-feed></news-feed>
+                </router-view>
+            </div>
         </main>
     </div>
 </body>

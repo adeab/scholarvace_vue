@@ -8,6 +8,26 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import VueRouter from 'vue-router'
+import NewsFeed from './components/NewsFeed.vue';
+import Blog from './components/Blog.vue';
+import Video from './components/Video.vue';
+import Hub from './components/Hub.vue';
+
+
+Vue.use(VueRouter)
+
+let routes = [
+    { path: '/feed', component: NewsFeed },
+    { path: '/blog', component: Blog },
+    { path: '/video', component: Video},
+    { path: '/hub', component: Hub }
+  ]
+
+const router = new VueRouter({
+    mode: 'history',
+    routes // short for `routes: routes`
+  })
 
 /**
  * The following block of code may be used to automatically register your
@@ -29,5 +49,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
 });
