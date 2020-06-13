@@ -25,5 +25,6 @@ Route::get('{any}', 'HomeController@index')->where('any', '.*');
 
 /* Blog Route */
 
-Route::get('/blog_list', 'BlogController@blog_list')->name('blog_list');
+Route::get('all_blog', 'BlogController@all_blog')->name('all_blog');
+Route::post('/new_blog_store', 'BlogController@store')->name('new_blog_store');
 

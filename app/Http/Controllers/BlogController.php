@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\blog;
+use App\Blog;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -17,8 +17,10 @@ class BlogController extends Controller
         
     }
 
-    public function blog_list()
+    public function all_blog()
     {
+        echo "sdasd";
+        return;
         return response(Crud::all()->jsonSerialize(), Response::HTTP_OK);
     }
 
@@ -40,7 +42,27 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $title = $request->post('title');
+        $body = $request->post('body');
+        $file = "";
+
+        if (file_exists($request->file('file')))
+        {
+            $file = $request->file('file');
+            $destinationPath = 'uploads';
+            $file->move($destinationPath,$file->getClientOriginalName());
+            $file_name = $file->getClientOriginalName();
+        }else{
+            echo "File does not exist.";
+        }
+
+        Blog::create([
+            'title' => $title,
+            'body' => $body,
+            'filename' => $file_name
+        ]);
+
+        echo "Successfully! Create New Blog";
     }
 
     /**

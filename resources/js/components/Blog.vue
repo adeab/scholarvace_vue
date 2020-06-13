@@ -23,11 +23,20 @@
                         <a class="dropdown-item" href="#">Another action</a>
 
                     </div>
-                    <button type="button" class="btn btn-outline-secondary">Create New</button>
+                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#myModal" onclick=
+                    "
+                    (function()
+                    {
+                        document.getElementById('form').reset();
+                        return false;
+                    })();return false;
+                    ">Create New</button>
                     </div>
+                    
                 </div>
                 </div>
             </div>
+
             <div class="col-lg-8 col-md-8 main_left  ">
 
                 <div class="border p-2 mb-2">
@@ -118,13 +127,116 @@
             </div>
             </div>
         </div>
+
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add New Blog</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form id="form" @submit="submited" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Title:</label>
+                <input type="text" name="title" class="form-control" placeholder="" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label>Body:</label>
+                <textarea class="form-control" name="body" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Photo/Video:</label>
+                <input type="file" id="files" ref="files" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     </section>
 </template>
 
-<script>
+<style>
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: -35%;
+}
+
+.modal-dialog {
+    position: absolute !important;
+    right: 8px;
+    top: 78px;
+    margin: 0!important;
+    width: 550px;
+}
+</style>
+
+<script>  
     export default {
-        mounted() {
-            console.log('Component mounted lol .')
+        mounted() 
+        {
+            this.get_all_record();
+        },
+        methods: 
+        {
+            get_all_record()
+            {
+                $.ajax(
+                {
+                    url: "all_blog",
+                    method: "GET",
+                    data: {},
+                    success: function(res)
+                    {
+                        console.log(res);
+                    },
+                    error: function(err)
+                    {
+                        console.log(err);
+                    }
+                })
+            },
+            submited(e)
+            {
+                e.preventDefault();
+
+                let formData = new FormData();
+
+                formData.append("title",$("input[name=title]").val());
+                formData.append("body",$("textarea[name=body]").val());
+                formData.append("file", document.getElementById("files").files[0]);
+
+                axios.post( '/new_blog_store',
+                formData,
+                {
+                    headers: 
+                    {
+                        'Content-Type': 'multipart/form-data'
+                    }
+                }
+                )
+                .then(function(res)
+                {
+                    $("#myModal").modal('hide');
+                    document.getElementById("form").reset();
+                    setTimeout(function(){ alert(res.data); }, 500);
+                })
+                .catch(function(err)
+                {
+                    console.log('FAILURE!!');
+                    console.log(err);
+                });
+            }
         }
     }
 </script>
