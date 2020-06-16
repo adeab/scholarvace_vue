@@ -6,6 +6,14 @@
     font-size: 14px;
     color: #767676;
   }
+  .p_16{
+    font-size:16px;
+    color: #767676;
+  }
+  .p_18{
+    font-size:16px;
+    color: #767676;
+  }
   .p_color{
     color: #767676;
   }
@@ -28,14 +36,33 @@
 .img_round_50{
   border-radius: 100%;
 }
-
+.gray_btn{
+  background-color: #E0E1E2 !important;
+  color: #767676 !important;
+}
 
 
   /* custom style class end*/
-
-
-
-
+/* login page style */
+.gray_btn.soCial_btn {
+  padding: 14px 15px;
+  border-radius: 5px;
+}
+.btn_facebook{
+  padding: 14px 22px;
+  border-radius: 5px;
+}
+.input_log{
+  max-width: 50% ;
+}
+.right_login button {
+  padding: 12px 40px;
+}
+/* .login_image img {
+  height: 100%;
+  width: 100%;
+} */
+/* login page style */
   .form-inline {
       display: inline-block;
   }
@@ -315,7 +342,7 @@ color: #bfbdbd;
       margin-left: 30px;
     }
   }
-  @media (max-width: 1199px){
+  @media (max-width: 1140px){
     .form-inline {
       display: block;
       margin-bottom: 10px;
@@ -324,3 +351,30 @@ color: #bfbdbd;
       width: 100%;
     }
   }
+  @media (max-width: 768px){
+    .input_log {
+      max-width: 100% ;
+    }
+  }
+
+  @media (max-width: 420px){
+    .gray_btn.soCial_btn {
+      padding: 14px 13px;
+    }
+    .btn_facebook{
+      padding: 14px 18px;
+    }
+  }
+
+  @media (max-width: 330px){
+    .gray_btn.soCial_btn {
+      padding: 14px 4px;
+    }
+    .btn_facebook{
+      padding: 14px 11px;
+    }
+    .right_login button {
+      padding: 8px 25px;
+    }
+  }
+ 
