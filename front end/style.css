@@ -1,8 +1,12 @@
   body{
     background: #F8F8F8 !important;
+    padding: 0;
+    margin: 0;
   }
   /* custom style class */
-  
+  .padding0{
+    padding: 0!important;
+  }
   .p_14{
     font-size: 14px;
     color: #767676;
@@ -44,7 +48,9 @@
   background-color: #E0E1E2 !important;
   color: #767676 !important;
 }
-
+.bg_white{
+  background-color: #fff;
+}
 
   /* custom style class end*/
 /* login page style */
@@ -338,13 +344,10 @@ color: #bfbdbd;
   border-radius: 0px;
 }
 /* user profile style */
-#my_profile{
-  
-}
 .my_profile{
   height: 100%;
   width: 100%;
-  background-image: url('../img/profilebg.png');
+  background-image: url('img/profilebg.png');
   position: relative;
   padding: 0 !important;
 }
@@ -381,6 +384,7 @@ color: #bfbdbd;
 .user_btn01:hover{
   background: #fff!important;
   color:#767676!important;
+  border:1px solid #2EA6FF;
 }
 .myprofile_ul{
     padding: 0;
@@ -403,6 +407,9 @@ color: #bfbdbd;
 .info_ul li a:hover {
    
   color: #2EA6FF;
+}
+.form_perinfo{
+  background-color: #fff;
 }
 
 
@@ -428,6 +435,9 @@ color: #bfbdbd;
     .input_log {
       max-width: 100% ;
     }
+    .sticker1{
+      position: unset!important;
+    }
   }
 
   @media (max-width: 420px){
@@ -436,6 +446,9 @@ color: #bfbdbd;
     }
     .btn_facebook{
       padding: 14px 18px;
+    }
+    .sticker1{
+      position: unset!important;
     }
   }
 

@@ -115,97 +115,203 @@
     </div>
 </section>
 <!-- personal information area -->
-<section class="p-5">
+<section class="pt-5">
   <div class="container personal_info">
     <div class="row">
-      <div class="col-md-4">
+      <div class=" sticker sticker1">
         <ul class="info_ul">
-          <li><a class="" href="#">Basic Information</a></li>
-          <li><a href="#">Education Information</a></li>
-          <li><a href="#">Work Experience</a></li>
-          <li class="border-0"><a href="#">Add Achievement</a></li>
+          <li><a href="#basic">Basic Information</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#achive">Add Achievement</a></li>
+          <li><a href="#project">Add Projects</a></li>
+          <li class="border-0"><a href="#skill">Add Professional Skill
+          </a></li>
         </ul>
       </div>
       <div class="col-md-8">
         <div class="personalInfo bg-light">
-          <div class="pr_top d-flex justify-content-between">
-            <div><h4>personal Information</h4></div>
-            <div>
-              <a href="#"><button class="btn user_btn01">Cancel</button></a>
-              <a href="#"><button class="btn user_btn01">Save</button></a>
-            </div>
-          </div>
-          <hr>
+         
           
           <form action="" class=" ">
-            <div>
-              <div class="input-group mb-3">
-                  <input type="file" class="" >
-              </div>
-              <div class="form-group">
-                <label  >Name*</label>
-                <input type="text" class="form-control "   placeholder="User Name">
-              </div>
-              <div class="form-group">
-                <label  >Nationality*</label>
-                <input type="text" class="form-control "   placeholder="Nationality" >
+            <div  class="form_perinfo bg_white p-3 mb-4"><!--personal Information-->
+                <div class="pr_top d-flex justify-content-between">
+                  <div><h4>personal Information</h4></div>
+                  <div>
+                    <a href="#"><button class="btn user_btn01">Cancel</button></a>
+                    <a href="#"><button class="btn user_btn01">Save</button></a>
+                  </div>
+                </div>
+                <hr>
+                <div class="input-group mb-3">
+                    <input type="file" class="" >
+                </div>
+                <div class="form-group">
+                  <label  >Name*</label>
+                  <input type="text" class="form-control "   placeholder="User Name">
+                </div>
+                <div class="form-group">
+                  <label  >Nationality*</label>
+                  <input type="text" class="form-control "   placeholder="Nationality" >
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Blood Group</label>
+                    <select class="custom-select" >
+                      <option value="">Choose...</option>
+                      <option value="1">A+</option>
+                      <option value="2">B+</option>
+                      <option value="3">AB+</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputState">Gender</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="gender" type="radio" value="male">
+                      <label class="form-check-label" >Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="gender" type="radio" value="female" >
+                      <label class="form-check-label" >Female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="validationTextarea">About</label>
+                  <textarea class="form-control " id="validationTextarea" placeholder="Write somethings about your self...." ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="validationTextarea">General Skills</label>
+                  <textarea class="form-control  " id="validationTextarea" placeholder="Write somethings about your self...." ></textarea>
+                </div>
+            </div> 
+            <div  class="bg_white p-3 mb-4"><!--Contact Information-->
+              <div class="pr_top d-flex justify-content-between">
+                <div><h4>Contact Information</h4></div>
+                <div>
+                  <a href="#"><button class="btn user_btn01">Cancel</button></a>
+                  <a href="#"><button class="btn user_btn01">Save</button></a>
+                </div>
               </div>
               <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">Blood Group</label>
-                  <select class="custom-select" >
-                    <option value="">Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                <div class="col-md-6 mb-3">
+                  <label >E-mail:</label>
+                  <input type="text" class="form-control"  placeholder="info@demo.com" >
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputState">Gender</label>
-                  <br>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="gender" type="radio" value="male">
-                    <label class="form-check-label" >Male</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" name="gender" type="radio" value="female" >
-                    <label class="form-check-label" >Female</label>
-                  </div>
+                <div class="col-md-6 mb-3">
+                  <label >Phone number:</label>
+                  <input type="text" class="form-control"  placeholder="+00 123 456 789">
                 </div>
               </div>
               <div class="mb-3">
-                <label for="validationTextarea">About</label>
-                <textarea class="form-control " id="validationTextarea" placeholder="Write somethings about your self...." ></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="validationTextarea">General Skills</label>
-                <textarea class="form-control  " id="validationTextarea" placeholder="Write somethings about your self...." ></textarea>
+                <label for="validationTextarea">Address</label>
+                <textarea class="form-control  " id="validationTextarea" placeholder="Address..." ></textarea>
               </div>
             </div>
-            
-            <div class="pr_top d-flex justify-content-between">
-              <div><h4>Contact Information</h4></div>
-              <div>
-                <a href="#"><button class="btn user_btn01">Cancel</button></a>
-                <a href="#"><button class="btn user_btn01">Save</button></a>
+            <div  class="bg_white p-3 mb-4"><!--Work Experience-->
+              <div class="pr_top d-flex justify-content-between">
+                <div><h4>Work Experience</h4></div>
+                <div>
+                  <a href="#"><button class="btn user_btn01">Skip</button></a>
+                  <a href="#"><button class="btn user_btn01">Save</button></a>
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Company</label>
+                  <input type="text" class="form-control"  placeholder="Company" >
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label >Designation</label>
+                  <input type="text" class="form-control"  placeholder="Designation">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Experience</label>
+                  <input type="text" class="form-control"  placeholder="Experience" >
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label >Short Description</label>
+                  <input type="text" class="form-control"  placeholder="Short Description">
+                </div>
               </div>
             </div>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label >E-mail:</label>
-                <input type="text" class="form-control"  placeholder="info@demo.com" >
+            <div  class="bg_white p-3 mb-4"><!--Add Achievement-->
+              <div class="pr_top d-flex justify-content-between">
+                <div><h4>Add Achievement</h4></div>
+                <div>
+                  <a href="#"><button class="btn user_btn01">Skip</button></a>
+                  <a href="#"><button class="btn user_btn01">Save</button></a>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <label >Phone number:</label>
-                <input type="text" class="form-control"  placeholder="+00 123 456 789">
+              <hr>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Course/Cretificate</label>
+                  <input type="text" class="form-control"  placeholder="Course/Cretificate" >
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label >Result</label>
+                  <input type="text" class="form-control"  placeholder="Result">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Duration</label>
+                  <input type="text" class="form-control"  placeholder="Duration" >
+                </div>
+                
               </div>
             </div>
-            <div class="mb-3">
-              <label for="validationTextarea">Address</label>
-              <textarea class="form-control  " id="validationTextarea" placeholder="Address..." ></textarea>
+            <div id="project" class="bg_white p-3 mb-4"><!--Add Projects-->
+              <div class="pr_top d-flex justify-content-between">
+                <div><h4>Add Projects</h4></div>
+                <div>
+                  <a href="#"><button class="btn user_btn01">Skip</button></a>
+                  <a href="#"><button class="btn user_btn01">Save</button></a>
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Project Name</label>
+                  <input type="text" class="form-control"  placeholder="Project Name" >
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label >Platform</label>
+                  <input type="text" class="form-control"  placeholder="Platform">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label >Short Description</label>
+                  <input type="text" class="form-control"  placeholder="Description" >
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label >Link if possible</label>
+                  <input type="text" class="form-control"  placeholder="Link">
+                </div>
+              </div>
             </div>
-          </div> 
+            <div id="skill" class="bg_white p-3 mb-4"><!--Add Professional Skill-->
+              <div class="pr_top d-flex justify-content-between">
+                <div><h4>Add Professional Skill</h4></div>
+                <div>
+                  <a href="#"><button class="btn user_btn01">Skip</button></a>
+                  <a href="#"><button class="btn user_btn01">Save</button></a>
+                </div>
+              </div>
+              <hr>
 
+              <div class="form-group">
+                <label >Skill Name</label>
+                <textarea type="text" class="form-control"  placeholder="Skills"></textarea>
+              </div>
+              
+            </div>
           </form>
         </div>
       </div>
@@ -213,7 +319,6 @@
   </div>
 </section>
 <!-- body content here end-->
-<div style="height:100vh;background:#fff;"></div>
 
   <!-- Modal one-->
   <div class="modal" id="myModal"   role="dialog">
@@ -375,7 +480,25 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/slick.min.js" ></script>
+<script type="text/javascript" src="js/jquery.sticky.js" ></script>
+<script>
+ $(document).ready(function(){
+  $(".sticker").sticky({
+    topSpacing:200,
+    zIndex:2,
+    center:true,
+    responsiveWidth: true,
+    wrapperClassName:'col-md-4 mb-5',
+    widthFromWrapper: false,
+  });
+});  
+
+
+</script>
+
 <script type="text/javascript">
+
+
 // slick slider main news main page
 $(document).ready(function(){
   $('.your-class').slick({
