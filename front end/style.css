@@ -7,8 +7,15 @@
   .padding0{
     padding: 0!important;
   }
+  .color_yellow{
+    color:#FFC107;
+  }
   .p_14{
     font-size: 14px;
+    color: #767676;
+  }
+  .p_12{
+    font-size: 12px;
     color: #767676;
   }
   .p_16{
@@ -51,7 +58,10 @@
 .bg_white{
   background-color: #fff;
 }
-
+.active{
+  background-color: #707070;
+  color:#000;
+}
   /* custom style class end*/
 /* login page style */
 .gray_btn.soCial_btn {
@@ -209,6 +219,7 @@
 }
 .news_one img {
     border-radius: 50%;
+    width: 115px;
 }
 .drp_news i{
   font-size: 22px;
@@ -291,7 +302,72 @@ color: #bfbdbd;
 .hub_small_img h6 {
     float: right;
 }
-/* notice page area */
+/* new hub area body */
+.dropDown-btn{
+  border: none;
+  padding: 0;
+  background: none;
+}
+.dropDown-container li {
+  margin: 3px;
+  padding: 5px 30px;
+}
+
+.dropDown-container li a {
+  color:#767676
+
+}
+.dropDown-container li:hover{
+  color:#fff;
+  background:#047ED9
+
+}
+.dropDown-container li:hover a{
+  color:#fff;
+ text-decoration:none;
+
+}
+.class_one img{
+  width: 60px;
+  border-radius: 50%;
+}
+/* hub conversation area */
+.hub_classMenu .top_me_con{
+  padding: 20px;
+}
+.hub_classMenu a{
+  
+  color: #000;
+  padding:10px;
+}
+.hub_classMenu a:hover,.Active{
+  border-radius: 10px;
+  color: #707070;
+  text-decoration: none;
+  background-color: #DEDEDE;
+  
+}
+.convarse_img img{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+/* hub file page style */
+.files {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 9px 13px -14px;
+}
+.file_img{
+  height: 100px;
+    background: #EFEFEF;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: inline-flex;
+    border-radius: 10px 10px 0 0;
+}
+/* notice page area1 */
 #num{
   width: 70px;
   padding: 4px;
@@ -347,7 +423,7 @@ color: #bfbdbd;
 .my_profile{
   height: 100%;
   width: 100%;
-  background-image: url('img/profilebg.png');
+  background-image: url('../img/profilebg.png');
   position: relative;
   padding: 0 !important;
 }
@@ -411,7 +487,6 @@ color: #bfbdbd;
 .form_perinfo{
   background-color: #fff;
 }
-
 
 #footer{
   background: #1B1C1D;

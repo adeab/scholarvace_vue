@@ -1,3 +1,9 @@
+
+    $(document).ready(function(){
+    $(".dropDown-btn").click(function(){
+        $(".dropDown-container").toggle();
+    });
+    });
 // Different effects for showing and closing modal
 let fadeIn = 'slideInRight';
 let fadeOut = 'slideOutRight';
