@@ -389,6 +389,10 @@ color: #bfbdbd;
 .btn_poular_tag{
    background-color: #EFEFEF !important;
 }
+.main_right{
+  height:70vh;
+  overflow-y: scroll;
+}
 /* blog details page */
 .bt_so{
   color: #fff !important;
@@ -431,7 +435,7 @@ color: #bfbdbd;
 .my_profile{
   height: 100%;
   width: 100%;
-  background-image: url('../img/profilebg.png');
+  background-image: url('img/profilebg.png');
   position: relative;
   padding: 0 !important;
 }

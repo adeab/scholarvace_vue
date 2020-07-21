@@ -5,15 +5,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>scholarcave</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+<link href="../style.css" type="text/css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/slick.css">
-<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
 <style type="text/css">
 
 </style>
@@ -22,7 +22,7 @@
   <div class="fixed-top">
 <nav class="navbar navbar-default navbar-expand-md navbar-light">
   <div class="navbar-header d-flex col">
-   <a class="" href="#"><img src="img/main-logo.png" class="img-fluid logo_img"></a>
+   <a class="" href="#"><img src="../img/main-logo.png" class="img-fluid logo_img"></a>
     <!--  <a class="" href="#"><img src="img/sjibl_my_logo.png" class="img-fluid logo_img"></a> -->
     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class=" navbar-toggler ml-auto border-0">
       <span class="navbar-toggler-icon"></span>
@@ -98,7 +98,7 @@
   <div class="container p-5">
     <div class="row">
       <div class="col-md-4 comPa_left text-center">
-        <img class="img-fluid img_round_50" src="img/working-woman-technology-computer-7374.png" alt="Company Profile Photo">
+        <img class="img-fluid img_round_50" src="../img/working-woman-technology-computer-7374.png" alt="Company Profile Photo">
       </div>
       <div class="col-md-8 comPa_right pt-5">
         <h4 class="font-weight-bolder">Company Name</h4>
@@ -140,84 +140,132 @@
       </div>
       <div class="col-md-8 comPa_mid_right ">
         <div class="d-flex hub_classMenu" style="">
-            <div class="top_me_con"><a href="">Announcement</a></div>
+            <div class="top_me_con"><a href="hub_discussion.html">DISCUSSION</a></div>
             <div class="top_me_con"><a class="Active" href="hub_conversation.html">CONVERSATION</a></div>
+            <div class="top_me_con"><a href="hub_files.html">FILES</a></div>
             <div class="top_me_con"><a href="hub_member.html">MEMBERS</a></div>
-            <div class="top_me_con">
-                <div class="dropdown" style="margin: -8px;">
-                    <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      seemore
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Files</a>
-                      <a class="dropdown-item" href="#">Members</a>
-                      <a class="dropdown-item" href="#">Exam</a>
-                      <a class="dropdown-item" href="#">Assignment</a>
-                    </div>
-                  </div>
-            </div>
             <div class="ml-auto align-items-center" style="display: flex;"> <a href=""><i class="fa fa-camera"></i></a> </div>
         </div>
-        <div class=" p-2 mb-2">
-            <div class="border  d-flex justify-content-between mb-3">
-                <div class="p-3 mem_list" >
-                    <p class="font-weight-bold p_18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores?</p> 
-                    <img class="mr-2 member_img img-fluid float-left" src="img/1.png" alt="">
-                    <p class="p-2 p_12">Jone Week</p>
+        <div class="  p-4 mb-2 d-flex justify-content-between" style="background-color: #F1F1F1;">
+            <div class="input-group " style="width: 60%;">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                      <i class="fa fa-search"></i>
+                  </span>
                 </div>
-               <div class="m-2">
-                <div class="dropdown">
-                    <button class="btn drp_news" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa fa-ellipsis-h"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                <input type="text" style="height:100%;" class="form-control" placeholder="search" aria-label="" aria-describedby="basic-addon1">
+              </div>
+              <div class="">
+                  <button class="btn btn-primary">UploadFile <i class="fa fa-chevron-down"></i></button>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid"  src="../img/file1.png" alt="">
                     </div>
-                  </div>
-                  <p class="p_12">01 min ago</p>
-               </div>
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
             </div>
-            <div class="border  d-flex justify-content-between mb-3">
-                <div class="p-3 mem_list" >
-                    <p class="font-weight-bold p_18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores?</p> 
-                    <img class="mr-2 member_img img-fluid float-left" src="img/1.png" alt="">
-                    <p class="p-2 p_12">Jone Week</p>
-                </div>
-               <div class="m-2">
-                <div class="dropdown">
-                    <button class="btn drp_news" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa fa-ellipsis-h"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file2.png" alt="">
                     </div>
-                  </div>
-                  <p class="p_12">01 min ago</p>
-               </div>
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
             </div>
-            <div class="border  d-flex justify-content-between mb-3">
-                <div class="p-3 mem_list" >
-                    <p class="font-weight-bold p_18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores?</p> 
-                    <img class="mr-2 member_img img-fluid float-left" src="img/1.png" alt="">
-                    <p class="p-2 p_12">Jone Week</p>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file3.png" alt="">
+                    </div>   
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
                 </div>
-               <div class="m-2">
-                <div class="dropdown">
-                    <button class="btn drp_news" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fa fa-ellipsis-h"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file1.png" alt="">
+                    </div>    
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-file"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file1.png" alt="">
+                    </div>    
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-file"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file2.png" alt="">
+                    </div>    
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-file"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file3.png" alt="">
+                    </div>    
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-file"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file1.png" alt="">
+                    </div>    
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-file"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file2.png" alt="">
                     </div>
-                  </div>
-                  <p class="p_12">01 min ago</p>
-               </div>
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file3.png" alt="">
+                    </div>   
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
+            </div><div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file2.png" alt="">
+                    </div>
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-center files">
+                    <div class="file_img">
+                        <img class="img-fluid" src="../img/file3.png" alt="">
+                    </div>   
+                    <p class="p_14 p-2 m-0">Digital Marketing Stock Images</p>
+                    <p class="p_12 pb-2"><i class="color_yellow fa fa-folder"></i> marketing</p>
+                </div>
             </div>
         </div>
       </div>
@@ -384,12 +432,12 @@
     </div>
   </section>
 
-  	<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js" ></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/slick.min.js" ></script>
-<script type="text/javascript" src="js/jquery.sticky.js" ></script>
+  	<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/slick.min.js" ></script>
+<script type="text/javascript" src="../js/jquery.sticky.js" ></script>
 <script>
  $(document).ready(function(){
   $(".sticker").sticky({
