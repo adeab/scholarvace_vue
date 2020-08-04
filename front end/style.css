@@ -62,6 +62,21 @@
   background-color: #707070;
   color:#000;
 }
+.comment_img {
+  width: 45px;
+  border-radius: 50%;
+}
+.badge_relative {
+  position: relative;
+}
+.badgeone {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 32px;
+  left: 37px;
+  display: block!important;
+}
   /* custom style class end*/
 /* login page style */
 .gray_btn.soCial_btn {
